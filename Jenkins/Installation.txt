@@ -64,10 +64,10 @@ yum install git -y
 
 #Install Maven:
 
-sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.7/binaries/apache-maven-3.8.7-bin.tar.gz
-sudo tar xf apache-maven-3.8.7-bin.tar.gz -C /opt
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
+sudo tar xf apache-maven-3.9.2-bin.tar.gz -C /opt
 #Create a symlink for Apache maven directory to update the maven versions
-sudo ln -s /opt/apache-maven-3.8.7 /opt/maven
+sudo ln -s /opt/apache-maven-3.9.2 /opt/maven
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`````
 
@@ -84,8 +84,8 @@ sudo ln -s /opt/apache-maven-3.8.7 /opt/maven
 
 
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64"
-export MAVEN_HOME=/opt/apache-maven-3.8.7
-export M2=/opt/apache-maven-3.8.7/bin
+export MAVEN_HOME=/opt/apache-maven-3.9.2
+export M2=/opt/apache-maven-3.9.2/bin
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME:$M2
 
 source ~/.bash_profile
@@ -93,8 +93,8 @@ source ~/.bashrc
 
 #open .bashrc & add the following lines:
 #export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64"
-#export MAVEN_HOME=/opt/apache-maven-3.8.7
-#export M2=/opt/apache-maven-3.8.7/bin
+#export MAVEN_HOME=/opt/apache-maven-3.9.2
+#export M2=/opt/apache-maven-3.9.2/bin
 #PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME:$M2
 
 #source ~/.bash_profile
