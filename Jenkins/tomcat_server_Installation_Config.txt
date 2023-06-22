@@ -73,9 +73,9 @@ cd /home/devopsadmin/.ssh
 
 cat id_rsa.pub > authorized_keys
 
-chown -R devopsadmin /home/devopsadmin/.ssh
-chmod 600 /home/devopsadmin/.ssh/authorized_keys
-chmod 700 /home/devopsadmin/.ssh
+sudo chown -R devopsadmin /home/devopsadmin/.ssh
+sudo chmod 600 /home/devopsadmin/.ssh/authorized_keys
+sudo chmod 700 /home/devopsadmin/.ssh
 
 #make devopsadmin user as a owner to tomcat dir :
 
