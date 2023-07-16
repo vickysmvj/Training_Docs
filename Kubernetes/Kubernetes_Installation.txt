@@ -52,7 +52,7 @@ systemctl start kubelet
 #Only on Master Node:
 #~~~~~~~~~~~~~~~~~~~~~
 
-sudo kubeadm init --apiserver-advertise-address=172.31.45.158 --pod-network-cidr=192.168.0.0/16 --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem
+sudo kubeadm init --apiserver-advertise-address=172.31.82.198 --pod-network-cidr=192.168.0.0/16 --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
