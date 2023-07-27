@@ -88,3 +88,46 @@ kubectl describe nodes
 kubeadm join 172.31.45.158:6443 --token 942ikd.qwhww76se2aq3wlg --discovery-token-ca-cert-hash sha256:c8096f4e1a2a5f3d9d95e6eed3bac413336dcead1512e90c688d6e4e3d153193
 
 #kubeadm join 172.31.45.158:6443 --token 7mg2jr.qygy3fc8prlkegm1 --discovery-token-ca-cert-hash sha256:c8096f4e1a2a5f3d9d95e6eed3bac413336dcead1512e90c688d6e4e3d153193
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+integration with jenkins
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Add-USer for k8s :
+
+useradd -m -d /home/devopsadmin devopsadmin
+
+su - devopsadmin
+
+ssh-keygen
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+cd /home/devopsadmin/.ssh
+
+cat id_rsa.pub > authorized_keys
+
+sudo chown -R devopsadmin /home/devopsadmin/.ssh        # run in root ,add devopsadmin to visudo ,root and no password
+sudo chmod 600 /home/devopsadmin/.ssh/authorized_keys
+sudo chmod 700 /home/devopsadmin/.ssh
+
+#make devopsadmin user as a owner to home dir of devopsadmin dir :
+
+chown -R devopsadmin /home/devopsadmin
+
+
+
+
+
+
+
+
+
+
+
