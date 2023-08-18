@@ -61,7 +61,7 @@ su - devopsadmin
 
 ssh-keygen
 
-ssh-copy-id ansibleadmin@172.31.13.75
+ssh-copy-id ansibleadmin@172.31.43.130
 ssh-copy-id ansibleadmin@172.31.11.171
 
 ssh ansibleadmin@172.31.13.75
@@ -76,7 +76,7 @@ samplenode2 ansible_ssh_host=172.31.5.75 ansible_ssh_user=ansibleadmin
 
 
 [testnodes1]
-samplenode1 ansible_ssh_host=172.31.10.179 ansible_ssh_user=ansibleadmin 
+samplenode1 ansible_ssh_host=172.31.43.130 ansible_ssh_user=ansibleadmin 
 [testnodes2]
 samplenode2 ansible_ssh_host=172.31.5.75 ansible_ssh_user=ansibleadmin
 
