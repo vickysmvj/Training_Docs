@@ -42,8 +42,8 @@ ls -a
 #Install epel Package :
 #Install Ansible 
 
-amazon-linux-extras install epel
-amazon-linux-extras install ansible2
+amazon-linux-extras install epel -y
+amazon-linux-extras install ansible2 -y
 
 #go to /etc/ansible
 
