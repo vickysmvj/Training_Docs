@@ -64,14 +64,14 @@ ssh-keygen
 ssh-copy-id ansibleadmin@172.31.43.130
 ssh-copy-id ansibleadmin@172.31.11.171
 
-ssh ansibleadmin@172.31.13.75
+ssh ansibleadmin@172.31.43.130
 ssh ansibleadmin@172.31.11.171
 
 
 ###update vi etc/ansible/host
 
 [testnodes]
-samplenode1 ansible_ssh_host=172.31.10.179 ansible_ssh_user=ansibleadmin 
+samplenode1 ansible_ssh_host=172.31.43.130 ansible_ssh_user=ansibleadmin 
 samplenode2 ansible_ssh_host=172.31.5.75 ansible_ssh_user=ansibleadmin
 
 
