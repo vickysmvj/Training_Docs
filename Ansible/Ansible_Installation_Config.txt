@@ -80,6 +80,7 @@ samplenode2 ansible_ssh_host=172.31.54.19 ansible_ssh_user=ansibleadmin
 
 [testnodes1]
 samplenode1 ansible_ssh_host=172.31.61.92 ansible_ssh_user=ansibleadmin 
+
 [testnodes2]
 samplenode2 ansible_ssh_host=172.31.54.19 ansible_ssh_user=ansibleadmin
 
