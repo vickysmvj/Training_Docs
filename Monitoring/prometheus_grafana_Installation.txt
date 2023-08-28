@@ -2,10 +2,11 @@
 
 ### Goto https://prometheus.io/download/
 
+#wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz
+wget https://github.com/prometheus/prometheus/releases/download/v2.46.0/prometheus-2.46.0.linux-amd64.tar.gz
+     
 
-wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz
-
-tar -zxvf prometheus-2.38.0.linux-amd64.tar.gz
+tar -zxvf prometheus-2.46.0.linux-amd64.tar.gz
 
 ###===> Create following file:
 
@@ -21,7 +22,7 @@ After=network-online.target
 User=root
 Restart=on-failure
 
-ExecStart=/root/prometheus-2.38.0.linux-amd64/prometheus --config.file=/root/prometheus-2.38.0.linux-amd64/prometheus.yml
+ExecStart=/root/prometheus-2.46.0.linux-amd64/prometheus --config.file=/root/prometheus-2.46.0.linux-amd64/prometheus.yml
 
 [Install]
 WantedBy=multi-user.target
@@ -49,9 +50,10 @@ http://13.232.146.141:9090/
 
 Red Hat, CentOS, RHEL, and Fedora(64 Bit)SHA256: 
 
-wget https://dl.grafana.com/oss/release/grafana-9.1.2-1.x86_64.rpm
+#wget https://dl.grafana.com/oss/release/grafana-9.1.2-1.x86_64.rpm
+wget https://dl.grafana.com/oss/release/grafana-10.1.0-1.x86_64.rpm
 
-sudo yum install grafana-9.1.2-1.x86_64.rpm
+sudo yum install grafana-10.1.0-1.x86_64.rpm
 
 
 sudo /bin/systemctl enable grafana-server.service
