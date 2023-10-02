@@ -61,28 +61,28 @@ su - devopsadmin
 
 ssh-keygen
 
-ssh-copy-id ansibleadmin@172.31.61.92
-ssh-copy-id ansibleadmin@172.31.54.19
+ssh-copy-id ansibleadmin@172.31.90.214
+ssh-copy-id ansibleadmin@172.31.95.59
 
-ssh ansibleadmin@172.31.61.92
-ssh ansibleadmin@172.31.54.19
+ssh ansibleadmin@172.31.90.214
+ssh ansibleadmin@172.31.95.59
 
 
 ###update vi etc/ansible/host
 #[webservers]
-#webserver1 ansible_host=192.168.1.10
-#webserver2 ansible_host=192.168.1.11
+#webserver1 ansible_host=172.31.90.214
+#webserver2 ansible_host=172.31.95.59
 
 [testnodes]
-samplenode1 ansible_ssh_host=172.31.61.92 ansible_ssh_user=ansibleadmin 
-samplenode2 ansible_ssh_host=172.31.54.19 ansible_ssh_user=ansibleadmin
+samplenode1 ansible_ssh_host=172.31.90.214 ansible_ssh_user=ansibleadmin 
+samplenode2 ansible_ssh_host=172.31.95.59 ansible_ssh_user=ansibleadmin
 
 
 [testnodes1]
-samplenode1 ansible_ssh_host=172.31.61.92 ansible_ssh_user=ansibleadmin 
+samplenode1 ansible_ssh_host=172.31.90.214 ansible_ssh_user=ansibleadmin 
 
 [testnodes2]
-samplenode2 ansible_ssh_host=172.31.54.19 ansible_ssh_user=ansibleadmin
+samplenode2 ansible_ssh_host=172.31.95.59 ansible_ssh_user=ansibleadmin
 
 #**************************************
 #hosts file is the default Inventory file for ansible 
